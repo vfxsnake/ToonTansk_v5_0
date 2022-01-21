@@ -26,6 +26,15 @@ protected:
 
 private:
 	// forward declaration of CapsuleComponent
+	UPROPERTY()
 	class UCapsuleComponent* CapsuleComponent = nullptr;
 
+	UPROPERTY()
+	UStaticMeshComponent* BaseMeshComponent = nullptr;
+
+	UPROPERTY()
+	UStaticMeshComponent* TurretMeshComponent = nullptr;
+
+	UPROPERTY()
+	USceneComponent* ProjectileSpawnPointComponent = nullptr;
 };
